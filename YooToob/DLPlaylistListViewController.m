@@ -62,19 +62,41 @@
 
 #pragma mark - View Controller Lifecycle
 
+static NSString * const kPlaylistID = @"DDA0985AA94E4A3D";
+
 - (void)viewDidLoad
 {
 	// Load videos.
 	GDataServiceGoogleYouTube *youTubeService = [[GDataServiceGoogleYouTube alloc] init];
 	
-	[youTubeService fetchFeedWithURL:[GDataServiceGoogleYouTube youTubeURLForFeedID:kGDataYouTubeFeedIDTopRated]
-				   completionHandler:^(GDataServiceTicket *ticket, GDataFeedBase *feed, NSError *error) {
-					   for (id entry in [feed entries]) {
-						   [[self videos] addObject:entry];
-					   }
-					   
-					   [[self tableView] reloadData];
-				   }];
+	NSString *root = [GDataServiceGoogleYouTube serviceRootURLString];
+	NSString *templateStr = @"%@api/playlists/%@";
+	NSString *urlString = [NSString stringWithFormat:templateStr, root, kPlaylistID];
+	
+	[youTubeService fetchPublicFeedWithURL:[NSURL URLWithString:urlString]
+								 feedClass:[GDataFeedYouTubePlaylist class]
+						 completionHandler:^(GDataServiceTicketBase *ticket,
+											 GDataFeedBase *feed,
+											 NSError *error) {
+							 [self setTitle:[[feed title] stringValue]];
+							 
+							 for (GDataEntryBase *entry in [feed entries]) {
+								 if ([entry isKindOfClass:[GDataEntryYouTubeVideo class]]) {
+									 [[self videos] addObject:entry];
+								 } else {
+									 GDataXMLElement *element = [entry XMLElement];
+									 GDataEntryYouTubeVideo *video =
+									 [[GDataEntryYouTubeVideo alloc] initWithXMLElement:element
+																				 parent:nil];
+									 
+									 if (video) {
+										 [[self videos] addObject:video];
+									 }
+								 }
+							 }
+							 
+							 [[self tableView] reloadData];
+						 }];
 }
 
 #pragma mark - UITableViewDataSource Protocol Methods
