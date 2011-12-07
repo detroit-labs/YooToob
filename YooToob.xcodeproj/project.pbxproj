@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FEF7C8F148FCDBA00FB0076 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEF7C8E148FCDBA00FB0076 /* UIKit.framework */; };
+		1FEF7C91148FCDBA00FB0076 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEF7C90148FCDBA00FB0076 /* Foundation.framework */; };
+		1FEF7C93148FCDBA00FB0076 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEF7C92148FCDBA00FB0076 /* CoreGraphics.framework */; };
+		1FEF7C99148FCDBA00FB0076 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF7C97148FCDBA00FB0076 /* InfoPlist.strings */; };
+		1FEF7C9B148FCDBA00FB0076 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7C9A148FCDBA00FB0076 /* main.m */; };
+		1FEF7C9F148FCDBA00FB0076 /* DLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7C9E148FCDBA00FB0076 /* DLAppDelegate.m */; };
+		1FEF7CA2148FCDBA00FB0076 /* DLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7CA1148FCDBA00FB0076 /* DLMasterViewController.m */; };
+		1FEF7CA5148FCDBA00FB0076 /* DLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7CA4148FCDBA00FB0076 /* DLDetailViewController.m */; };
+		1FEF7CA8148FCDBA00FB0076 /* DLMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF7CA6148FCDBA00FB0076 /* DLMasterViewController.xib */; };
+		1FEF7CAB148FCDBA00FB0076 /* DLDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF7CA9148FCDBA00FB0076 /* DLDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FEF7C8A148FCDBA00FB0076 /* YooToob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YooToob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FEF7C8E148FCDBA00FB0076 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1FEF7C90148FCDBA00FB0076 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1FEF7C92148FCDBA00FB0076 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FEF7C96148FCDBA00FB0076 /* YooToob-Info.plist */ = {isa = PBXFileReference; path = "YooToob-Info.plist"; sourceTree = "<group>"; };
+		1FEF7C98148FCDBA00FB0076 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FEF7C9A148FCDBA00FB0076 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FEF7C9C148FCDBA00FB0076 /* YooToob-Prefix.pch */ = {isa = PBXFileReference; path = "YooToob-Prefix.pch"; sourceTree = "<group>"; };
+		1FEF7C9D148FCDBA00FB0076 /* DLAppDelegate.h */ = {isa = PBXFileReference; path = DLAppDelegate.h; sourceTree = "<group>"; };
+		1FEF7C9E148FCDBA00FB0076 /* DLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAppDelegate.m; sourceTree = "<group>"; };
+		1FEF7CA0148FCDBA00FB0076 /* DLMasterViewController.h */ = {isa = PBXFileReference; path = DLMasterViewController.h; sourceTree = "<group>"; };
+		1FEF7CA1148FCDBA00FB0076 /* DLMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLMasterViewController.m; sourceTree = "<group>"; };
+		1FEF7CA3148FCDBA00FB0076 /* DLDetailViewController.h */ = {isa = PBXFileReference; path = DLDetailViewController.h; sourceTree = "<group>"; };
+		1FEF7CA4148FCDBA00FB0076 /* DLDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDetailViewController.m; sourceTree = "<group>"; };
+		1FEF7CA7148FCDBA00FB0076 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DLMasterViewController.xib; sourceTree = "<group>"; };
+		1FEF7CAA148FCDBA00FB0076 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DLDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FEF7C87148FCDBA00FB0076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEF7C8F148FCDBA00FB0076 /* UIKit.framework in Frameworks */,
+				1FEF7C91148FCDBA00FB0076 /* Foundation.framework in Frameworks */,
+				1FEF7C93148FCDBA00FB0076 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FEF7C7F148FCDBA00FB0076 = {
+			isa = PBXGroup;
+			children = (
+				1FEF7C94148FCDBA00FB0076 /* YooToob */,
+				1FEF7C8D148FCDBA00FB0076 /* Frameworks */,
+				1FEF7C8B148FCDBA00FB0076 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FEF7C8B148FCDBA00FB0076 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF7C8A148FCDBA00FB0076 /* YooToob.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FEF7C8D148FCDBA00FB0076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF7C8E148FCDBA00FB0076 /* UIKit.framework */,
+				1FEF7C90148FCDBA00FB0076 /* Foundation.framework */,
+				1FEF7C92148FCDBA00FB0076 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FEF7C94148FCDBA00FB0076 /* YooToob */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF7C9D148FCDBA00FB0076 /* DLAppDelegate.h */,
+				1FEF7C9E148FCDBA00FB0076 /* DLAppDelegate.m */,
+				1FEF7CA0148FCDBA00FB0076 /* DLMasterViewController.h */,
+				1FEF7CA1148FCDBA00FB0076 /* DLMasterViewController.m */,
+				1FEF7CA3148FCDBA00FB0076 /* DLDetailViewController.h */,
+				1FEF7CA4148FCDBA00FB0076 /* DLDetailViewController.m */,
+				1FEF7CA6148FCDBA00FB0076 /* DLMasterViewController.xib */,
+				1FEF7CA9148FCDBA00FB0076 /* DLDetailViewController.xib */,
+				1FEF7C95148FCDBA00FB0076 /* Supporting Files */,
+			);
+			path = YooToob;
+			sourceTree = "<group>";
+		};
+		1FEF7C95148FCDBA00FB0076 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF7C96148FCDBA00FB0076 /* YooToob-Info.plist */,
+				1FEF7C97148FCDBA00FB0076 /* InfoPlist.strings */,
+				1FEF7C9A148FCDBA00FB0076 /* main.m */,
+				1FEF7C9C148FCDBA00FB0076 /* YooToob-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FEF7C89148FCDBA00FB0076 /* YooToob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEF7CAE148FCDBA00FB0076 /* Build configuration list for PBXNativeTarget "YooToob" */;
+			buildPhases = (
+				1FEF7C86148FCDBA00FB0076 /* Sources */,
+				1FEF7C87148FCDBA00FB0076 /* Frameworks */,
+				1FEF7C88148FCDBA00FB0076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YooToob;
+			productName = YooToob;
+			productReference = 1FEF7C8A148FCDBA00FB0076 /* YooToob.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FEF7C81148FCDBA00FB0076 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Detroit Labs";
+			};
+			buildConfigurationList = 1FEF7C84148FCDBA00FB0076 /* Build configuration list for PBXProject "YooToob" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1FEF7C7F148FCDBA00FB0076;
+			productRefGroup = 1FEF7C8B148FCDBA00FB0076 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FEF7C89148FCDBA00FB0076 /* YooToob */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FEF7C88148FCDBA00FB0076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEF7C99148FCDBA00FB0076 /* InfoPlist.strings in Resources */,
+				1FEF7CA8148FCDBA00FB0076 /* DLMasterViewController.xib in Resources */,
+				1FEF7CAB148FCDBA00FB0076 /* DLDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FEF7C86148FCDBA00FB0076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEF7C9B148FCDBA00FB0076 /* main.m in Sources */,
+				1FEF7C9F148FCDBA00FB0076 /* DLAppDelegate.m in Sources */,
+				1FEF7CA2148FCDBA00FB0076 /* DLMasterViewController.m in Sources */,
+				1FEF7CA5148FCDBA00FB0076 /* DLDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FEF7C97148FCDBA00FB0076 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FEF7C98148FCDBA00FB0076 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1FEF7CA6148FCDBA00FB0076 /* DLMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FEF7CA7148FCDBA00FB0076 /* en */,
+			);
+			name = DLMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		1FEF7CA9148FCDBA00FB0076 /* DLDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FEF7CAA148FCDBA00FB0076 /* en */,
+			);
+			name = DLDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FEF7CAC148FCDBA00FB0076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1FEF7CAD148FCDBA00FB0076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FEF7CAF148FCDBA00FB0076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YooToob/YooToob-Prefix.pch";
+				INFOPLIST_FILE = "YooToob/YooToob-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1FEF7CB0148FCDBA00FB0076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YooToob/YooToob-Prefix.pch";
+				INFOPLIST_FILE = "YooToob/YooToob-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FEF7C84148FCDBA00FB0076 /* Build configuration list for PBXProject "YooToob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEF7CAC148FCDBA00FB0076 /* Debug */,
+				1FEF7CAD148FCDBA00FB0076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FEF7CAE148FCDBA00FB0076 /* Build configuration list for PBXNativeTarget "YooToob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEF7CAF148FCDBA00FB0076 /* Debug */,
+				1FEF7CB0148FCDBA00FB0076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FEF7C81148FCDBA00FB0076 /* Project object */;
+}
