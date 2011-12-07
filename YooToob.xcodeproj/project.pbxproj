@@ -13,29 +13,76 @@
 		1FEF7C99148FCDBA00FB0076 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF7C97148FCDBA00FB0076 /* InfoPlist.strings */; };
 		1FEF7C9B148FCDBA00FB0076 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7C9A148FCDBA00FB0076 /* main.m */; };
 		1FEF7C9F148FCDBA00FB0076 /* DLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7C9E148FCDBA00FB0076 /* DLAppDelegate.m */; };
-		1FEF7CA2148FCDBA00FB0076 /* DLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7CA1148FCDBA00FB0076 /* DLMasterViewController.m */; };
-		1FEF7CA5148FCDBA00FB0076 /* DLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7CA4148FCDBA00FB0076 /* DLDetailViewController.m */; };
-		1FEF7CA8148FCDBA00FB0076 /* DLMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF7CA6148FCDBA00FB0076 /* DLMasterViewController.xib */; };
-		1FEF7CAB148FCDBA00FB0076 /* DLDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF7CA9148FCDBA00FB0076 /* DLDetailViewController.xib */; };
+		1FEF7CC9148FF47800FB0076 /* libGDataTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEF7CC0148FF46700FB0076 /* libGDataTouchStaticLib.a */; };
+		1FEF7CCD148FF61C00FB0076 /* DLPlaylistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7CCB148FF61C00FB0076 /* DLPlaylistListViewController.m */; };
+		1FEF7CCE148FF61C00FB0076 /* DLPlaylistListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF7CCC148FF61C00FB0076 /* DLPlaylistListViewController.xib */; };
+		1FEF7CD4149006BC00FB0076 /* DLYouTubeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF7CD2149006BC00FB0076 /* DLYouTubeVideoViewController.m */; };
+		1FEF7CD5149006BC00FB0076 /* DLYouTubeVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF7CD3149006BC00FB0076 /* DLYouTubeVideoViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FEF7CBD148FF46700FB0076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF7CB1148FF46600FB0076 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
+			remoteInfo = GDataFramework;
+		};
+		1FEF7CBF148FF46700FB0076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF7CB1148FF46600FB0076 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1C6E0F1027B3CE00B46459;
+			remoteInfo = GDataTouchStaticLib;
+		};
+		1FEF7CC1148FF46700FB0076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF7CB1148FF46600FB0076 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F14A9DD0B1276B70072EBB8;
+			remoteInfo = GDataUnitTests;
+		};
+		1FEF7CC3148FF46700FB0076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF7CB1148FF46600FB0076 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F85E018103B83B700B4C418;
+			remoteInfo = GDataIPhoneUnitTests;
+		};
+		1FEF7CC5148FF46700FB0076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF7CB1148FF46600FB0076 /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
+			remoteInfo = DevelopmentTestTool;
+		};
+		1FEF7CC7148FF47100FB0076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF7CB1148FF46600FB0076 /* GData.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F1C6E0E1027B3CE00B46459;
+			remoteInfo = GDataTouchStaticLib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1FEF7C8A148FCDBA00FB0076 /* YooToob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YooToob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FEF7C8E148FCDBA00FB0076 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FEF7C90148FCDBA00FB0076 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FEF7C92148FCDBA00FB0076 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1FEF7C96148FCDBA00FB0076 /* YooToob-Info.plist */ = {isa = PBXFileReference; path = "YooToob-Info.plist"; sourceTree = "<group>"; };
+		1FEF7C96148FCDBA00FB0076 /* YooToob-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YooToob-Info.plist"; sourceTree = "<group>"; };
 		1FEF7C98148FCDBA00FB0076 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FEF7C9A148FCDBA00FB0076 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1FEF7C9C148FCDBA00FB0076 /* YooToob-Prefix.pch */ = {isa = PBXFileReference; path = "YooToob-Prefix.pch"; sourceTree = "<group>"; };
-		1FEF7C9D148FCDBA00FB0076 /* DLAppDelegate.h */ = {isa = PBXFileReference; path = DLAppDelegate.h; sourceTree = "<group>"; };
+		1FEF7C9C148FCDBA00FB0076 /* YooToob-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YooToob-Prefix.pch"; sourceTree = "<group>"; };
+		1FEF7C9D148FCDBA00FB0076 /* DLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAppDelegate.h; sourceTree = "<group>"; };
 		1FEF7C9E148FCDBA00FB0076 /* DLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAppDelegate.m; sourceTree = "<group>"; };
-		1FEF7CA0148FCDBA00FB0076 /* DLMasterViewController.h */ = {isa = PBXFileReference; path = DLMasterViewController.h; sourceTree = "<group>"; };
-		1FEF7CA1148FCDBA00FB0076 /* DLMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLMasterViewController.m; sourceTree = "<group>"; };
-		1FEF7CA3148FCDBA00FB0076 /* DLDetailViewController.h */ = {isa = PBXFileReference; path = DLDetailViewController.h; sourceTree = "<group>"; };
-		1FEF7CA4148FCDBA00FB0076 /* DLDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDetailViewController.m; sourceTree = "<group>"; };
-		1FEF7CA7148FCDBA00FB0076 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DLMasterViewController.xib; sourceTree = "<group>"; };
-		1FEF7CAA148FCDBA00FB0076 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DLDetailViewController.xib; sourceTree = "<group>"; };
+		1FEF7CB1148FF46600FB0076 /* GData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GData.xcodeproj; path = "External/gdata-objectivec-client-read-only/Source/GData.xcodeproj"; sourceTree = "<group>"; };
+		1FEF7CCA148FF61C00FB0076 /* DLPlaylistListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLPlaylistListViewController.h; sourceTree = "<group>"; };
+		1FEF7CCB148FF61C00FB0076 /* DLPlaylistListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLPlaylistListViewController.m; sourceTree = "<group>"; };
+		1FEF7CCC148FF61C00FB0076 /* DLPlaylistListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLPlaylistListViewController.xib; sourceTree = "<group>"; };
+		1FEF7CD1149006BC00FB0076 /* DLYouTubeVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLYouTubeVideoViewController.h; sourceTree = "<group>"; };
+		1FEF7CD2149006BC00FB0076 /* DLYouTubeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLYouTubeVideoViewController.m; sourceTree = "<group>"; };
+		1FEF7CD3149006BC00FB0076 /* DLYouTubeVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLYouTubeVideoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FEF7CC9148FF47800FB0076 /* libGDataTouchStaticLib.a in Frameworks */,
 				1FEF7C8F148FCDBA00FB0076 /* UIKit.framework in Frameworks */,
 				1FEF7C91148FCDBA00FB0076 /* Foundation.framework in Frameworks */,
 				1FEF7C93148FCDBA00FB0076 /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +103,7 @@
 		1FEF7C7F148FCDBA00FB0076 = {
 			isa = PBXGroup;
 			children = (
+				1FEF7CB1148FF46600FB0076 /* GData.xcodeproj */,
 				1FEF7C94148FCDBA00FB0076 /* YooToob */,
 				1FEF7C8D148FCDBA00FB0076 /* Frameworks */,
 				1FEF7C8B148FCDBA00FB0076 /* Products */,
@@ -72,9 +121,9 @@
 		1FEF7C8D148FCDBA00FB0076 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1FEF7C8E148FCDBA00FB0076 /* UIKit.framework */,
-				1FEF7C90148FCDBA00FB0076 /* Foundation.framework */,
 				1FEF7C92148FCDBA00FB0076 /* CoreGraphics.framework */,
+				1FEF7C90148FCDBA00FB0076 /* Foundation.framework */,
+				1FEF7C8E148FCDBA00FB0076 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,12 +133,12 @@
 			children = (
 				1FEF7C9D148FCDBA00FB0076 /* DLAppDelegate.h */,
 				1FEF7C9E148FCDBA00FB0076 /* DLAppDelegate.m */,
-				1FEF7CA0148FCDBA00FB0076 /* DLMasterViewController.h */,
-				1FEF7CA1148FCDBA00FB0076 /* DLMasterViewController.m */,
-				1FEF7CA3148FCDBA00FB0076 /* DLDetailViewController.h */,
-				1FEF7CA4148FCDBA00FB0076 /* DLDetailViewController.m */,
-				1FEF7CA6148FCDBA00FB0076 /* DLMasterViewController.xib */,
-				1FEF7CA9148FCDBA00FB0076 /* DLDetailViewController.xib */,
+				1FEF7CCA148FF61C00FB0076 /* DLPlaylistListViewController.h */,
+				1FEF7CCB148FF61C00FB0076 /* DLPlaylistListViewController.m */,
+				1FEF7CCC148FF61C00FB0076 /* DLPlaylistListViewController.xib */,
+				1FEF7CD1149006BC00FB0076 /* DLYouTubeVideoViewController.h */,
+				1FEF7CD2149006BC00FB0076 /* DLYouTubeVideoViewController.m */,
+				1FEF7CD3149006BC00FB0076 /* DLYouTubeVideoViewController.xib */,
 				1FEF7C95148FCDBA00FB0076 /* Supporting Files */,
 			);
 			path = YooToob;
@@ -106,6 +155,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1FEF7CB2148FF46600FB0076 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF7CBE148FF46700FB0076 /* GData.framework */,
+				1FEF7CC0148FF46700FB0076 /* libGDataTouchStaticLib.a */,
+				1FEF7CC2148FF46700FB0076 /* GDataUnitTests.octest */,
+				1FEF7CC4148FF46700FB0076 /* GDataIPhoneUnitTests.octest */,
+				1FEF7CC6148FF46700FB0076 /* DevelopmentTestTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +181,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1FEF7CC8148FF47100FB0076 /* PBXTargetDependency */,
 			);
 			name = YooToob;
 			productName = YooToob;
@@ -145,6 +207,12 @@
 			mainGroup = 1FEF7C7F148FCDBA00FB0076;
 			productRefGroup = 1FEF7C8B148FCDBA00FB0076 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1FEF7CB2148FF46600FB0076 /* Products */;
+					ProjectRef = 1FEF7CB1148FF46600FB0076 /* GData.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1FEF7C89148FCDBA00FB0076 /* YooToob */,
@@ -152,14 +220,52 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1FEF7CBE148FF46700FB0076 /* GData.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GData.framework;
+			remoteRef = 1FEF7CBD148FF46700FB0076 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FEF7CC0148FF46700FB0076 /* libGDataTouchStaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGDataTouchStaticLib.a;
+			remoteRef = 1FEF7CBF148FF46700FB0076 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FEF7CC2148FF46700FB0076 /* GDataUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GDataUnitTests.octest;
+			remoteRef = 1FEF7CC1148FF46700FB0076 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FEF7CC4148FF46700FB0076 /* GDataIPhoneUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GDataIPhoneUnitTests.octest;
+			remoteRef = 1FEF7CC3148FF46700FB0076 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FEF7CC6148FF46700FB0076 /* DevelopmentTestTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DevelopmentTestTool;
+			remoteRef = 1FEF7CC5148FF46700FB0076 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		1FEF7C88148FCDBA00FB0076 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1FEF7C99148FCDBA00FB0076 /* InfoPlist.strings in Resources */,
-				1FEF7CA8148FCDBA00FB0076 /* DLMasterViewController.xib in Resources */,
-				1FEF7CAB148FCDBA00FB0076 /* DLDetailViewController.xib in Resources */,
+				1FEF7CCE148FF61C00FB0076 /* DLPlaylistListViewController.xib in Resources */,
+				1FEF7CD5149006BC00FB0076 /* DLYouTubeVideoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,12 +278,20 @@
 			files = (
 				1FEF7C9B148FCDBA00FB0076 /* main.m in Sources */,
 				1FEF7C9F148FCDBA00FB0076 /* DLAppDelegate.m in Sources */,
-				1FEF7CA2148FCDBA00FB0076 /* DLMasterViewController.m in Sources */,
-				1FEF7CA5148FCDBA00FB0076 /* DLDetailViewController.m in Sources */,
+				1FEF7CCD148FF61C00FB0076 /* DLPlaylistListViewController.m in Sources */,
+				1FEF7CD4149006BC00FB0076 /* DLYouTubeVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FEF7CC8148FF47100FB0076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDataTouchStaticLib;
+			targetProxy = 1FEF7CC7148FF47100FB0076 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1FEF7C97148FCDBA00FB0076 /* InfoPlist.strings */ = {
@@ -186,22 +300,6 @@
 				1FEF7C98148FCDBA00FB0076 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1FEF7CA6148FCDBA00FB0076 /* DLMasterViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FEF7CA7148FCDBA00FB0076 /* en */,
-			);
-			name = DLMasterViewController.xib;
-			sourceTree = "<group>";
-		};
-		1FEF7CA9148FCDBA00FB0076 /* DLDetailViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FEF7CAA148FCDBA00FB0076 /* en */,
-			);
-			name = DLDetailViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -227,6 +325,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/External/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
@@ -245,6 +344,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/External/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -257,7 +357,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YooToob/YooToob-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"$(SRCROOT)/External/**",
+				);
 				INFOPLIST_FILE = "YooToob/YooToob-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,7 +373,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YooToob/YooToob-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"$(SRCROOT)/External/**",
+				);
 				INFOPLIST_FILE = "YooToob/YooToob-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

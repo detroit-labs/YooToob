@@ -10,8 +10,7 @@
 
 @interface DLAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) UINavigationController *navigationController;
+@property (nonatomic, strong)	UIWindow              	*window;
+@property (strong)           	UINavigationController	*navigationController;
 
 @end
