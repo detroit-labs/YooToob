@@ -12,12 +12,17 @@
 
 @interface DLYouTubeVideoViewController (PrivateMethods)
 
+#if TARGET_IPHONE_SIMULATOR == 1
 - (NSURL *)videoURLForVideoID:(NSString *)videoID;
+#else
+- (NSString *)htmlStringForVideoID:(NSString *)videoID;
+#endif
 
 @end
 
 @implementation DLYouTubeVideoViewController (PrivateMethods)
 
+#if TARGET_IPHONE_SIMULATOR == 1
 - (NSURL *)videoURLForVideoID:(NSString *)videoID
 {
 	NSString *urlAsString = [NSString stringWithFormat:@"http://m.youtube.com/watch?v=%@", videoID];
@@ -25,6 +30,16 @@
 	
 	return returnURL;
 }
+#else
+- (NSString *)htmlStringForVideoID:(NSString *)videoID
+{
+	NSInteger width = [[self webView] frame].size.width;
+	
+	NSString *htmlString = [NSString stringWithFormat:@"<html><head><meta name = \"viewport\" content = \"initial-scale = 1.0, user-scalable = no, width = %d\"/></head><body style=\"background:black;margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px\"><div><object width=\"100%%\" height=\"100%%\"><param name=\"movie\" value=\"http://www.youtube.com/v/%@&f=gdata_videos&c=ytapi-my-clientID&d=nGF83uyVrg8eD4rfEkk22mDOl3qUImVMV6ramM\"></param><param name=\"wmode\" value=\"transparent\"></param><embed src=\"http://www.youtube.com/v/%@&f=gdata_videos&c=ytapi-my-clientID&d=nGF83uyVrg8eD4rfEkk22mDOl3qUImVMV6ramM\" type=\"application/x-shockwave-flash\" wmode=\"transparent\" width=\"100%%\" height=\"100%%\"></embed></object></div></body></html>", width, videoID, videoID];
+	
+	return htmlString;
+}
+#endif
 
 @end
 
@@ -34,7 +49,20 @@
 @synthesize videoID = _videoID;
 @synthesize webView = _webView;
 
+#pragma mark - Object Lifecycle
+
+- (void)dealloc
+{
+	[self removeObserver:self
+			  forKeyPath:@"videoID"];
+}
+
 #pragma mark - View Controller Lifecycle
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+	return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
 
 - (void)viewDidLoad
 {
@@ -67,8 +95,15 @@
 			
 			if (videoID != nil &&
 				[videoID length] > 0) {
+#if TARGET_IPHONE_SIMULATOR == 1
 				NSURLRequest *request = [NSURLRequest requestWithURL:[self videoURLForVideoID:videoID]];
 				[[self webView] loadRequest:request];
+#else
+				NSString *htmlString = [self htmlStringForVideoID:videoID];
+				
+				[[self webView] loadHTMLString:htmlString
+									   baseURL:[NSURL URLWithString:@"http://www.detroitlabs.com"]];
+#endif
 			}
 		}
 	}

@@ -62,6 +62,11 @@
 
 #pragma mark - View Controller Lifecycle
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+	return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
 static NSString * const kPlaylistID = @"DDA0985AA94E4A3D";
 
 - (void)viewDidLoad
